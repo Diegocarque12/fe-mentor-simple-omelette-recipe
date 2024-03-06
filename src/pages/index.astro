@@ -1,5 +1,6 @@
 ---
-
+import "@fontsource/young-serif";
+import "@fontsource/outfit";
 ---
 
 <html lang="en">
@@ -30,41 +31,61 @@
   </head>
   <body class="bg-neutral_eggshell w-[375px] xl:w-[1440px]">
     <article
-      class="bg-white w-[500px] flex flex-col m-auto my-12 p-8 rounded-xl"
+      class="bg-white w-[600px] flex flex-col m-auto my-12 p-8 rounded-xl"
     >
       <img
         src="/assets/images/image-omelette.jpeg"
         alt="Omelette image"
         class="rounded-lg mb-6"
       />
-      <h1>Simple Omelette Recipe</h1>
-      <p>
+      <h1 class="text-4xl mb-4 text-neutral_darkCharcoal">
+        Simple Omelette Recipe
+      </h1>
+      <p class="mb-4 text-neutral_wengeBrown text-sm font-semibold">
         An easy and quick dish, perfect for any meal. This classic omelette
         combines beaten eggs cooked to perfection, optionally filled with your
         choice of cheese, vegetables, or meats.
       </p>
-      <section>
-        <span>Preparation time</span>
-        <ul>
-          <li>Total: Approximately 10 minutes</li>
-          <li>Preparation: 5 minutes</li>
-          <li>Cooking: 5 minutes</li>
+      <section class="p-8 bg-neutral_roseWhite">
+        <span class="text-primary_darkRaspberry text-lg font-bold"
+          >Preparation time</span
+        >
+        <ul
+          class="text-primary_darkRaspberry list-disc marker:text-primary_darkRaspberry ml-4 mt-2 text-sm"
+        >
+          <li class="text-neutral_wengeBrown pl-4 mb-2 font-semibold">
+            <b>Total</b>: Approximately 10 minutes
+          </li>
+          <li class="text-neutral_wengeBrown pl-4 mb-2 font-semibold">
+            <b>Preparation</b>: 5 minutes
+          </li>
+          <li class="text-neutral_wengeBrown pl-4 mb-2 font-semibold">
+            <b>Cooking</b>: 5 minutes
+          </li>
         </ul>
       </section>
-      <section>
-        <h2>Ingredients</h2>
-        <ul>
-          <li>2-3 large eggs</li>
-          <li>Salt, to taste</li>
-          <li>Pepper, to taste</li>
-          <li>1 tablespoon of butter or oil</li>
-          <li>
+      <section class="mt-8">
+        <h2 class="text-2xl text-primary_nutmeg">Ingredients</h2>
+        <ul class="ml-4">
+          <li class="pl-4 text-neutral_darkCharcoal list-square">
+            2-3 large eggs
+          </li>
+          <li class="pl-4 text-neutral_darkCharcoal list-square">
+            Salt, to taste
+          </li>
+          <li class="pl-4 text-neutral_darkCharcoal list-square">
+            Pepper, to taste
+          </li>
+          <li class="pl-4 text-neutral_darkCharcoal list-square">
+            1 tablespoon of butter or oil
+          </li>
+          <li class="pl-4 text-neutral_darkCharcoal list-square">
             Optional fillings: cheese, diced vegetables, cooked meats, herbs
           </li>
         </ul>
       </section>
       <section>
-        <h2>Instructions</h2>
+        <h2 class="text-2xl text-primary_nutmeg">Instructions</h2>
         <ol>
           <li>
             <p>
@@ -108,7 +129,7 @@
         </ol>
       </section>
       <section>
-        <h2>Nutrition</h2>
+        <h2 class="text-2xl text-primary_nutmeg">Nutrition</h2>
         <span
           >The table below shows nutritional values per serving without the
           additional fillings.</span
@@ -130,3 +151,16 @@
     </div>
   </body>
 </html>
+
+<style>
+  * {
+    font-family: "outfit";
+  }
+  h1,
+  h2 {
+    font-family: "Young Serif";
+  }
+  .list-square {
+    list-style-type: square;
+  }
+</style>
